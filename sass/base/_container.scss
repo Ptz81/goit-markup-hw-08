@@ -1,0 +1,28 @@
+.section_container {
+
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 15px;
+
+}
+
+.section_wrapper {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+    &--modification {
+    padding-top: 0px;
+}
+}
+
+.section-portfolio {
+    padding: 94px 0;
+}
+
+.section-item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+}

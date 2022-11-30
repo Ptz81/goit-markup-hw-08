@@ -1,0 +1,23 @@
+.link {
+    color: var(--logo-color);
+    text-decoration: none;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 24px;
+}
+
+.header_logo {
+    color: var(--accent-color);
+}
+
+.footer_logo {
+    color: var(--main-color);
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}

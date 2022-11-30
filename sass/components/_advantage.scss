@@ -1,0 +1,37 @@
+.advantage {
+    display: flex;
+    gap: 30px;
+}
+
+.advantage_item {
+    width: 270px;
+}
+
+.advantage-wrapper__icon {
+    @include flex;
+    width: 270px;
+    height: 120px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: 30px;
+    gap: 30px;
+    border-radius: 4px;
+}
+
+
+.advantage_text {
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.advantages_title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
