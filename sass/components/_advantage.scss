@@ -3,28 +3,29 @@
     gap: 30px;
 
     @media screen and (max-width: 479px) {
-            width: 100%;
-            flex-direction: column;
+    width: 100%;
+    flex-direction: column;
     
-        }
+    }
 
     @media screen and (min-width: 480px) {
-            width: 100%;
-            flex-wrap: wrap;
-        } 
+    width: 100%;
+    flex-wrap: wrap;
+    } 
 }
 
 .advantage_item {
     width: 450px;
-   gap: 30px;
+    gap: 30px;
    
-   @media screen and (min-width: 768px) {
-            width: 354px;
-        }
-    @media screen and (min-width: 1170px) {
-            width: 270px;
-            
-        }
+@media screen and (min-width: 768px) {
+    width: 354px;
+    height: auto;
+}
+@media screen and (min-width: 1170px) {
+    width: 270px;
+    height: 120px;
+}
         
 }
 
@@ -41,16 +42,16 @@
     border-radius: 4px;
 
     @media screen and (min-width: 768px) {
-            width: 354px;
-            height: 120px;
+    width: 354px;
+    height: 120px;
     
-        }
+    }
 
-        @media screen and (min-width: 1170px) {
-                width: 270px;
-                height: auto;
-        
-            }
+    @media screen and (min-width: 1170px) {
+    width: 270px;
+    height: 120px;
+    
+    }
 }
 
 
@@ -70,6 +71,6 @@
     margin-bottom: 10px;
 
     @media screen and (max-width: 767px) {
-        text-align: center;
+    text-align: center;
     }
 }

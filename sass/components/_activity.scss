@@ -1,4 +1,8 @@
-
+.section_activity{
+    @media screen and (max-width: 1199px) {
+        display: none;    
+    }
+}
 
 .activity_title {
     margin-top: 0;

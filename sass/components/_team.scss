@@ -5,10 +5,31 @@
 
 .team_title {
     margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.15;
+    // text-align: center;
+
+
+    @media screen and (min-width: 1200px) {
+    font-size: 36px;
     margin-bottom: 50px;
+    }
 }
 
 .team_section {
     display: flex;
     gap: 30px;
+
+    @media screen and (max-width: 479px) {
+            width: 100%;
+            flex-direction: column;
+    
+        }
+    
+        @media screen and (min-width: 480px) {
+            width: 100%;
+            flex-wrap: wrap;
+        }
 }
