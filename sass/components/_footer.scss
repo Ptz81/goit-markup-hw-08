@@ -7,24 +7,61 @@
 
 .footer_container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+
+    @media screen and (min-width: 1200px) {
+            align-items: baseline;
+        }
 }
 
 .footer--transform {
-    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    @media screen and (min-width: 480px) and (max-width:1199px) {
+        margin-bottom: 60px;
+        text-align: center;
+        align-items: center;
+        }
+    
+    // @media screen and (min-width: 768px) {
+        
+    //     justify-content: space-between;
+        
+    // }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
 }
 
 
 .footer_address {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
     font-style: normal;
+
+    @media screen and (min-width: 1200px){
+        
+        gap: 20px;
+            
+    }
 }
 
 .footer>.link {
     color: var(--main-color);
 }
+
+// .footer_logo{
+//     display: flex;
+// }
 
 .footer_nav {
     display: inline-block;
@@ -53,8 +90,28 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.footer_subscribe{
+    display: flex;
+    flex-direction: column;
+    
+
+    @media screen and (min-width: 480px) and (max-width: 767px){
+    margin-bottom: 60px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    }
+
+    
+}
+
+
 .footer_subscribe:nth-last-child(2) {
+    @media screen and (min-width: 1200px) {
     margin-right: auto;
+    }
+
 }
 
 .footer_title {
@@ -103,15 +160,26 @@
 }
 
 .footer_wrapper {
-    @include flex;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    gap: 12px
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (min-width: 480px) {
+            flex-direction:column;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+            flex-direction: row;
+            gap: 12px;
+        }
 }
 
 .footer_label {
     margin: 0;
+   
+    
 }
 
 .footer_input {
@@ -125,7 +193,7 @@
     color: var(--main-color);
     font-size: 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
 
     &::placeholder {
     font-size: 16px;
