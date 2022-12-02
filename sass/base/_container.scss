@@ -1,19 +1,41 @@
 .section_container {
-
-    width: 1200px;
+    
+    padding: 0px 15px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0px 15px;
+    width: 1200px;
+
+    @media screen and (min-width: 480px) {
+            width: 480px;
+        
+    }
+
+    @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+
+    @media screen and (min-width: 1200px) {
+         width: 1200px;
+    }
 
 }
 
 .section_wrapper {
-    padding-top: 94px;
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
     padding-bottom: 94px;
     
+    }
+
+
     &--modification {
     padding-top: 0px;
 }
+
 }
 
 .section-portfolio {

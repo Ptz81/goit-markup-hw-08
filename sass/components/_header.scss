@@ -3,9 +3,11 @@
 }
 
 .header_container {
-    @include flex;
-    // display: flex;
-    // align-items: center;
+
+
+    display: flex;
+    align-items: center;
+    
 }
 
 .header_link {
@@ -39,11 +41,20 @@
 
 
 .header_nav {
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+        display: none;
+        }
     margin-left: 93px;
 }
 
 .header_menu {
-    display: flex;
+    display: none;
+
+        @media (min-width: 768px) {
+        display: flex;
+        }
+    
 }
 
 .header_item {
