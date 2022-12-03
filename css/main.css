@@ -383,9 +383,14 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  padding: 10px 32px;
+  padding: 10px 24px;
   outline: 1px solid transparent;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), outline 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    padding: 10px 32px;
+  }
 }
 .btn:hover, .btn:focus {
   box-shadow: 0px 4px 4px hwb(0 100% 0%/0.15);
@@ -619,13 +624,16 @@ button {
   outline: none;
 }
 .menu-toggle .icon__menu {
-  display: none;
+  display: block;
 }
 .menu-toggle.js-open-menu .icon__cross {
   display: none;
 }
+.menu-toggle.js-close-menu .icon__menu {
+  display: none;
+}
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -717,7 +725,7 @@ button {
   position: relative;
 }
 
-.mobile-sites__line::after {
+.mobile-sites__line > a::after {
   content: "";
   display: block;
   width: 1px;
@@ -743,8 +751,8 @@ button {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-bg-color);
@@ -752,21 +760,36 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero_title {
   color: var(--main-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  font-size: 26px;
+  line-height: 1.6153846154;
   margin: 0 auto;
   margin-bottom: 30px;
+  width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero_title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 .hero_title--focus {
   -webkit-animation: hero_title--focus 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -805,7 +828,7 @@ button {
     height: auto;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .advantage_item {
     width: 270px;
     height: 120px;
@@ -829,7 +852,7 @@ button {
     height: 120px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .advantage-wrapper__icon {
     width: 270px;
     height: 120px;
@@ -966,18 +989,17 @@ button {
 .clients {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 @media screen and (max-width: 479px) {
   .clients {
     width: 100%;
-    flex-direction: column;
   }
 }
 @media screen and (min-width: 480px) {
   .clients {
     width: 100%;
-    flex-wrap: wrap;
   }
 }
 
@@ -1006,7 +1028,7 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .clients_link {
     width: 226px;
   }
@@ -1365,10 +1387,13 @@ button {
 .footer_container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .footer_container {
     flex-direction: row;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1439,7 +1464,7 @@ button {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer_subscribe {
     margin-bottom: 60px;
     justify-content: center;
@@ -1556,13 +1581,16 @@ button {
   outline: none;
 }
 .menu-toggle .icon__menu {
-  display: none;
+  display: block;
 }
 .menu-toggle.js-open-menu .icon__cross {
   display: none;
 }
+.menu-toggle.js-close-menu .icon__menu {
+  display: none;
+}
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -1654,7 +1682,7 @@ button {
   position: relative;
 }
 
-.mobile-sites__line::after {
+.mobile-sites__line > a::after {
   content: "";
   display: block;
   width: 1px;

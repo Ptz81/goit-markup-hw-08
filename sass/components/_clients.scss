@@ -1,17 +1,18 @@
 .clients {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
 
     @media screen and (max-width: 479px) {
     width: 100%;
-    flex-direction: column;
+    // flex-direction: column;
     
     }
 
         @media screen and (min-width: 480px) {
             width: 100%;
-            flex-wrap: wrap;
+            
         }
 }
 
@@ -38,7 +39,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 768px) {
             width: 226px;
         }
     

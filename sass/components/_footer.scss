@@ -8,11 +8,12 @@
 .footer_container {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
-    // justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 
     @media screen and (min-width: 768px) {
             flex-direction: row;
+            justify-content: space-around;
         }
 
     @media screen and (min-width: 1200px) {
@@ -23,19 +24,15 @@
 .footer--transform {
     display: flex;
     justify-content: center;
-    
     flex-direction: column;
+
     @media screen and (min-width: 480px) and (max-width:1199px) {
         margin-bottom: 60px;
         text-align: center;
         align-items: center;
         }
     
-    // @media screen and (min-width: 768px) {
-        
-    //     justify-content: space-between;
-        
-    // }
+ 
 
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
@@ -96,7 +93,7 @@
     flex-direction: column;
     
 
-    @media screen and (min-width: 480px) and (max-width: 767px){
+    @media screen and (min-width: 480px) and (max-width: 1199px){
     margin-bottom: 60px;
     justify-content: center;
     text-align: center;
