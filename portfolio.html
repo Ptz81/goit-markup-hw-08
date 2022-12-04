@@ -11,10 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    /> -->
+  
    <link rel="stylesheet" href="./css/main.min.css">
 
     <title>WebStudio-Portfolio</title>
@@ -25,6 +22,15 @@
     <header class="header">
       <div class="header_container section_container">
         <a href="./index.html" class="link"><span class="header_logo">Web</span>Studio</a>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
+            <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
+            <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+
         <nav class="header_nav">
           <ul class="header_menu list">
             <li class="header_item">
@@ -43,7 +49,7 @@
           <li class="header_item--flex icon-envelope">
             <a class="header_link header_link--primary" href="mailto:info@devstudio.com">
               <svg class="header_icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
+                <use href="./svg/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -51,7 +57,7 @@
           <li class="header_item--flex icon-phone">
             <a class="header_link header_link--primary" href="tel:+380961111111">
               <svg class="header_icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
+                <use href="./svg/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -94,7 +100,19 @@
                 <div class="portfolio-cover">
                   <img
                     class="img"
-                    src="./images/card_1.jpg"
+
+
+                      srcset="./img/mobile/portfolio img 480.jpg, 
+                      ./img/mobile/portfolio img@2x 480.jpg,
+                      ./img/tab/portfolio M img 768.jpg,
+                      ./img/tab/portfolio M img@2x 768.jpg,
+                      ./img/laptop/portfolio L img 1200.jpg,
+                      ./img/laptop/portfolio L img@2x 1200.jpg
+                      "
+                      sizes="1200px"
+
+
+                    src="./img/mobile/portfolio img 480.jpg"
                     width="370"
                     alt="лептоп з картками працівників"
                   />
@@ -246,7 +264,7 @@
             <li>
               <a class="footer_section--advance" href="https://instagram.com">
                 <svg class="footer_icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./svg/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -254,7 +272,7 @@
             <li>
               <a class="footer_section--advance" href="https://twitter.com">
                 <svg class="footer_icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./svg/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -262,7 +280,7 @@
             <li>
               <a class="footer_section--advance" href="https://www.facebook.com/">
                 <svg class="footer_icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./svg/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -270,7 +288,7 @@
             <li>
               <a class="footer_section--advance" href="https://www.linkedin.com/">
                 <svg class="footer_icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
+                  <use href="./svg/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -286,12 +304,66 @@
             <button class="btn footer_btn" type="submit">
               Підписатися
               <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-telegram"></use>
+                <use href="./svg/icons.svg#icon-telegram"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- MOBILE MENU -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
+          <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
+          <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a href="./index.html" class="link-mobile link-mobile__focus">Студія</a>
+        </li>
+        <li><a href="./portfolio.html" class="link-mobile">Портфоліо</a></li>
+        <li><a href="" class="link-mobile">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-menu mobile-menu__position list">
+        <li class="mobile-contact">
+          <a class="mobile-phone" href="tel:+380961111111">
+            <!-- <svg class="" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg> -->
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contact">
+          <a class="mobile-mail" href="mailto:info@devstudio.com">
+            <!-- <svg class="" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg> -->
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-sites mobile-sites__line"><a href="">Instagram</a></li>
+        <li class="mobile-sites mobile-sites__line"><a href="">Twitter</a></li>
+        <li class="mobile-sites mobile-sites__line"><a href="">facebook</a></li>
+        <li class="mobile-sites mobile-sites__line"><a href="">Linkedin</a></li>
+      </ul>
+    </div>
+
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mobile-menu.js"></script>
+    <script src="./modal.js" type="module"></script>
+    <script src="./menu.js"></script>
   </body>
 </html>

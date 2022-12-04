@@ -61,6 +61,10 @@
     display: block;
     position: relative;
 
+    @media screen and (min-width: 1200px) {
+        
+    }
+
     &:not(:last-child) {
     margin-right: 50px;
 }
@@ -92,15 +96,29 @@
 
 .header_menu--position {
     margin-left: auto;
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .header_item--flex {
     @include flex;
-    // display: flex;
-    // align-items: center;
+
+
+    &:nth-child(1){
+        @media screen and (max-width: 1199px) {
+            padding-bottom: 10px;
+        }
+        
+    }
 
     &:not(:last-child) {
-    margin-right: 50px;
+        @media screen and (min-width: 1200px) {
+           margin-right: 50px; 
+        }
+    
 }
 }
 

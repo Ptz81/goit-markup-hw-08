@@ -9,10 +9,14 @@
 }
 
 .agreement-title {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.72;
     user-select: none;
     color: #757575;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+    }
 }
 
 .agreement-form {

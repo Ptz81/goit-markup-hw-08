@@ -510,9 +510,14 @@ button {
 
 .section-item {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .section-item {
+    justify-content: center;
+  }
 }
 
 .header {
@@ -594,14 +599,27 @@ button {
 .header_menu--position {
   margin-left: auto;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header_menu--position {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .header_item--flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header_item--flex:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 1199px) {
+  .header_item--flex:nth-child(1) {
+    padding-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header_item--flex:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header_icon {
@@ -1128,13 +1146,19 @@ button {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 530px;
-  min-height: 580px;
+  width: 450px;
+  min-height: 609px;
   background-color: var(--main-color);
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   border-radius: 4px;
   padding: 40px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+    min-height: 580px;
+  }
 }
 
 .modal-sign {
@@ -1171,10 +1195,15 @@ button {
 .modal-name {
   color: var(--title-text-color);
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 1.5;
   font-weight: 700;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200) {
+  .modal-name {
+    line-height: 1.2;
+  }
 }
 
 .modal-form {
@@ -1266,13 +1295,18 @@ button {
 }
 
 .agreement-title {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.72;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .agreement-title {
+    font-size: 14px;
+  }
 }
 
 .agreement-form {
