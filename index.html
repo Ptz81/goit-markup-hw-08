@@ -24,50 +24,49 @@
       <div class="header_container section_container">
         <a href="./index.html" class="link"><span class="header_logo">Web</span>Studio</a>
 
-            <!-- MOBILE MENU -->
+        <!-- MOBILE MENU -->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
-          <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
-          <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
-        </svg>
-      </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
+              <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
+              <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
 
-      <ul class="mobile-menu list">
-        <li>
-          <a href="./index.html" class="link-mobile link-mobile__focus">Студія</a>
-        </li>
-        <li><a href="./portfolio.html" class="link-mobile">Портфоліо</a></li>
-        <li><a href="" class="link-mobile">Контакти</a></li>
-      </ul>
+          <ul class="mobile-menu list">
+            <li>
+              <a href="./index.html" class="link-mobile link-mobile__focus">Студія</a>
+            </li>
+            <li><a href="./portfolio.html" class="link-mobile">Портфоліо</a></li>
+            <li><a href="" class="link-mobile">Контакти</a></li>
+          </ul>
 
-      <ul class="mobile-menu mobile-menu__position list">
-        <li class="mobile-contact">
-          <a class="mobile-phone" href="tel:+380961111111">
-            <!-- <svg class="" width="10" height="16">
+          <ul class="mobile-menu mobile-menu__position list">
+            <li class="mobile-contact">
+              <a class="mobile-phone" href="tel:+380961111111">
+                <!-- <svg class="" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg> -->
-            +38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-contact">
-          <a class="mobile-mail" href="mailto:info@devstudio.com">
-            <!-- <svg class="" width="16" height="12">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contact">
+              <a class="mobile-mail" href="mailto:info@devstudio.com">
+                <!-- <svg class="" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg> -->
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-socials list">
-        <li class="mobile-sites mobile-sites__line"><a href="">Instagram</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">Twitter</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">facebook</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">Linkedin</a></li>
-      </ul>
-    </div>
-
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-socials list">
+            <li class="mobile-sites mobile-sites__line"><a href="">Instagram</a></li>
+            <li class="mobile-sites mobile-sites__line"><a href="">Twitter</a></li>
+            <li class="mobile-sites mobile-sites__line"><a href="">facebook</a></li>
+            <li class="mobile-sites mobile-sites__line"><a href="">Linkedin</a></li>
+          </ul>
+        </div>
 
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
@@ -180,17 +179,39 @@
           <h2 class="activity_title">Чим ми займаємось</h2>
           <ul class="activity list">
             <li class="activity_item">
-              <img src="./images/box_1.jpg" width="370" alt="процес набору на клавіатурі" />
+              <img
+                srcset="
+              ./img/laptop/activity1 img 1200.jpg 1x,
+              ./img/laptop/activity1 img@2x 1200.jpg 2x"
+                src="./img/laptop/activity1 img 1200.jpg"
+                width="370"
+                alt="процес набору на клавіатурі"
+              />
 
               <p class="activity_label">Десктопні додатки</p>
             </li>
             <li class="activity_item">
-              <img src="./images/box_2.jpg" width="370" alt="жінка з телефоном в руках" />
+              <img
+                srcset="
+              ./img/laptop/activity2 img 1200.jpg 1x,
+              ./img/laptop/activity2 img@2x 1200.jpg 2x
+              "
+                src="./img/laptop/activity2 img 1200.jpg"
+                width="370"
+                alt="жінка з телефоном в руках"
+              />
 
               <p class="activity_label">Мобільні додатки</p>
             </li>
             <li class="activity_item">
-              <img src="./images/box_3.jpg" width="370" alt="мужчина з планшетом в руках" />
+              <img
+                srcset="
+              ./img/laptop/activity3 img 1200.jpg 1x,
+              ./img/laptop/activity3 img@2x 1200.jpg 2x"
+                src="./img/laptop/activity3 img 1200.jpg"
+                width="370"
+                alt="мужчина з планшетом в руках"
+              />
 
               <p class="activity_label">Дизайнерські рішення</p>
             </li>
@@ -203,11 +224,22 @@
           <h2 class="team_title">Наша команда</h2>
           <ul class="team_section list">
             <li class="user">
-              <img class="user_img" 
-              srcset="./img/mobile/team1 img480.jpg 480w,
-              ./img/mobile/team1 img@2x 480.jpg 480w, "
-              src="./images/worker_1.jpg" 
-              alt="Ігор Дем'яненко" />
+             
+              <img
+                class="user_img"
+                src="./img/mobile/team1 img 450.jpg"
+                srcset="./img/laptop/team1 L img 270.jpg 270w,
+              ./img/tab/team1 img@2x 354.jpg 354w,
+               ./img/mobile/team1 img 450.jpg 450w,
+               ./img/laptop/team1 L img@2x 540.jpg 540w,
+               ./img/tab/team1 M img 708.jpg 708w,
+              ./img/mobile/team1 img@2x 900.jpg 900w,
+              "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                alt="Ігор Дем'яненко"
+                width="450"
+                
+              />
 
               <div class="user_wrapper">
                 <h3 class="user_name">Ігор Дем'яненко</h3>
@@ -248,8 +280,22 @@
                 </ul>
               </div>
             </li>
+
+            
             <li class="user">
-              <img src="./images/worker_2.jpg" alt="Ольга Рєпіна" />
+              <img 
+              src="./img/mobile/team2 img 450.jpg"
+              srcset="./img/laptop/team2 L img 270.jpg 270w,
+              ./img/tab/team2 img@2x 354.jpg 354w,
+               ./img/mobile/team2 img 450.jpg 450w,
+               ./img/laptop/team2 L img@2x 540.jpg 540w,
+               ./img/tab/team2 M img 708.jpg 708w,
+              ./img/mobile/team2 img@2x 900.jpg 900w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw" 
+              alt="Ольга Рєпіна" 
+              width="450"
+              />
 
               <div class="user_wrapper">
                 <h3 class="user_name">Ольга Рєпіна</h3>
@@ -291,7 +337,19 @@
               </div>
             </li>
             <li class="user">
-              <img src="./images/worker_3.jpg" alt="Микола Тарасов" />
+              <img 
+              src="./img/mobile/team3 img 450.jpg"
+                srcset="./img/laptop/team3 L img 270.jpg 270w,
+              ./img/tab/team3 img@2x 354.jpg 354w,
+               ./img/mobile/team3 img 450.jpg 450w,
+               ./img/laptop/team3 L img@2x 540.jpg 540w,
+               ./img/tab/team3 M img 708.jpg 708w,
+              ./img/mobile/team3 img@2x 900.jpg 900w,
+              "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              alt="Микола Тарасов" 
+              width="450"
+              />
 
               <div class="user_wrapper">
                 <h3 class="user_name">Микола Тарасов</h3>
@@ -333,7 +391,19 @@
               </div>
             </li>
             <li class="user">
-              <img src="./images/worker_4.jpg" alt="Михайло Єрмаков" />
+              <img 
+              src="./img/mobile/team4 img 450.jpg"
+                srcset="./img/laptop/team4 L img 270.jpg 270w,
+              ./img/tab/team4 img@2x 354.jpg 354w,
+               ./img/mobile/team4 img 450.jpg 450w,
+               ./img/laptop/team4 L img@2x 540.jpg 540w,
+               ./img/tab/team4 M img 708.jpg 708w,
+              ./img/mobile/team4 img@2x 900.jpg 900w,
+              "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              alt="Михайло Єрмаков" 
+              width="450"
+              />
 
               <div class="user_wrapper">
                 <h3 class="user_name">Михайло Єрмаков</h3>
@@ -598,8 +668,6 @@
         </form>
       </div>
     </div>
-
-
 
     <script
       defer
