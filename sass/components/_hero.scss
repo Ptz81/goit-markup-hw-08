@@ -7,20 +7,50 @@
     background-image:
         linear-gradient(to right,
             rgba(47, 48, 58, .4),
-            rgba(47, 48, 58, .4)), url(../../images/hero-Img.jpg);
+            rgba(47, 48, 58, .4)), 
+            url(../../img/mobile/Header\ img\ 480.jpg);
 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            .hero {
+                background-image: url(../../img/mobile/Header\ img@2x\ 480.jpg);
+            }
+        }
+
+        @media screen and (min-width:480px){
+            background-image: url(../../img/tab/Header\ M\ img\ 768.jpg);
+            
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    .hero {
+                        background-image: url(../../img/tab/Header\ M\ img@2x\ 768.jpg);
+                    }
+                }
+        }
+
+
+                @media screen and (min-width:768px) {
+                    background-image: url(../../img/laptop/header\ Img\ 1200.jpg);
+        
+                    @media screen and (min-device-pixel-ratio: 2),
+                    screen and (min-resolution: 192dpi),
+                    screen and (min-resolution: 2dppx) {
+                        .hero {
+                            background-image: url(../../img/laptop/header\ Img@2x\ 1200.jpg);
+                        }
+                    }
+                }
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
 
-    // @media screen and (min-width:768px) {
-    //         max-width: 768px;
-
-    //     }
 
     @media screen and (min-width:1200px) {
         padding-top: 200px;
@@ -42,9 +72,7 @@
     width: 360px;
     
     
-    // @media screen and (min-width: 768px) {
-            
-    //  }
+
 
        @media screen and (min-width: 1200px) {
     font-size: 44px;
