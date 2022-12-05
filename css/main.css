@@ -511,12 +511,20 @@ button {
 .section-item {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .section-item {
     justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-list:nth-child(3) {
+    padding-right: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -610,6 +618,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.2;
 }
 @media screen and (max-width: 1199px) {
   .header_item--flex:nth-child(1) {
@@ -1067,7 +1076,17 @@ button {
 }
 
 .portfolio_border {
-  width: 370px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio_border {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio_border {
+    width: 370px;
+  }
 }
 
 .portfolio-img {

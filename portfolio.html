@@ -22,7 +22,49 @@
     <header class="header">
       <div class="header_container section_container">
         <a href="./index.html" class="link"><span class="header_logo">Web</span>Studio</a>
+            <!-- MOBILE MENU -->
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
+          <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
+          <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li>
+          <a href="./index.html" class="link-mobile link-mobile__focus">Студія</a>
+        </li>
+        <li><a href="./portfolio.html" class="link-mobile">Портфоліо</a></li>
+        <li><a href="" class="link-mobile">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-menu mobile-menu__position list">
+        <li class="mobile-contact">
+          <a class="mobile-phone" href="tel:+380961111111">
+            <!-- <svg class="" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg> -->
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-contact">
+          <a class="mobile-mail" href="mailto:info@devstudio.com">
+            <!-- <svg class="" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg> -->
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials list">
+        <li class="mobile-sites mobile-sites__line"><a href="">Instagram</a></li>
+        <li class="mobile-sites mobile-sites__line"><a href="">Twitter</a></li>
+        <li class="mobile-sites mobile-sites__line"><a href="">facebook</a></li>
+        <li class="mobile-sites mobile-sites__line"><a href="">Linkedin</a></li>
+      </ul>
+    </div>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
             <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
@@ -102,18 +144,18 @@
                     class="img"
 
 
-                      srcset="./img/mobile/portfolio img 480.jpg, 
-                      ./img/mobile/portfolio img@2x 480.jpg,
-                      ./img/tab/portfolio M img 768.jpg,
-                      ./img/tab/portfolio M img@2x 768.jpg,
-                      ./img/laptop/portfolio L img 1200.jpg,
-                      ./img/laptop/portfolio L img@2x 1200.jpg
+                      srcset="./img/mobile/portfolio img 480.jpg 480vw, 
+                      ./img/mobile/portfolio img@2x 480.jpg 480vw 2x,
+                      ./img/tab/portfolio M img 768.jpg 768vw,
+                      ./img/tab/portfolio M img@2x 768.jpg 768vw 2x,
+                      ./img/laptop/portfolio L img 1200.jpg 1200vw,
+                      ./img/laptop/portfolio L img@2x 1200.jpg 1200vw 2x,
                       "
-                      sizes="1200px"
+                      sizes="(min-width:1200px) 30vw, (min-width: 768px) 50vw, (min-width: 480px) 100vw, 100vw"
 
 
                     src="./img/mobile/portfolio img 480.jpg"
-                    width="370"
+                    width="100%"
                     alt="лептоп з картками працівників"
                   />
 
@@ -312,49 +354,7 @@
       </div>
     </footer>
 
-    <!-- MOBILE MENU -->
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
-          <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
-          <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu list">
-        <li>
-          <a href="./index.html" class="link-mobile link-mobile__focus">Студія</a>
-        </li>
-        <li><a href="./portfolio.html" class="link-mobile">Портфоліо</a></li>
-        <li><a href="" class="link-mobile">Контакти</a></li>
-      </ul>
-
-      <ul class="mobile-menu mobile-menu__position list">
-        <li class="mobile-contact">
-          <a class="mobile-phone" href="tel:+380961111111">
-            <!-- <svg class="" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg> -->
-            +38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-contact">
-          <a class="mobile-mail" href="mailto:info@devstudio.com">
-            <!-- <svg class="" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg> -->
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-socials list">
-        <li class="mobile-sites mobile-sites__line"><a href="">Instagram</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">Twitter</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">facebook</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">Linkedin</a></li>
-      </ul>
-    </div>
 
         <script
       defer
