@@ -11,8 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-  
-   <link rel="stylesheet" href="./css/main.min.css">
+
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <title>WebStudio-Portfolio</title>
   </head>
@@ -23,46 +23,39 @@
       <div class="header_container section_container">
         <a href="./index.html" class="link"><span class="header_logo">Web</span>Studio</a>
 
+        <!-- MOBILE MENU -->
 
-            <!-- MOBILE MENU -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
+              <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
+              <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
-          <use class="icon__menu" href="./svg/icons.svg#icon-menu"></use>
-          <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
-        </svg>
-      </button>
+          <ul class="mobile-menu list">
+            <li class="mobile-item">
+              <a href="./index.html" class="link-mobile">Студія</a>
+            </li>
+            <li class="mobile-item"><a href="./portfolio.html" class="link-mobile link-mobile__focus">Портфоліо</a></li>
+            <li class="mobile-item"><a href="" class="link-mobile">Контакти</a></li>
+          </ul>
 
-      <ul class="mobile-menu list">
-        <li>
-          <a href="./index.html" class="link-mobile link-mobile__focus">Студія</a>
-        </li>
-        <li><a href="./portfolio.html" class="link-mobile">Портфоліо</a></li>
-        <li><a href="" class="link-mobile">Контакти</a></li>
-      </ul>
-
-      <ul class="mobile-menu mobile-menu__position list">
-        <li class="mobile-contact">
-          <a class="mobile-phone" href="tel:+380961111111">
-
-            +38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-contact">
-          <a class="mobile-mail" href="mailto:info@devstudio.com">
-
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-socials list">
-        <li class="mobile-sites mobile-sites__line"><a href="">Instagram</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">Twitter</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">facebook</a></li>
-        <li class="mobile-sites mobile-sites__line"><a href="">Linkedin</a></li>
-      </ul>
-    </div>
+          <ul class="mobile-menu mobile-menu__position list">
+            <li class="mobile-contact">
+              <a class="mobile-phone" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contact">
+              <a class="mobile-mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-socials list">
+            <li class="mobile-sites mobile-sites__line"><a href="">Instagram</a></li>
+            <li class="mobile-sites mobile-sites__line"><a href="">Twitter</a></li>
+            <li class="mobile-sites mobile-sites__line"><a href="">facebook</a></li>
+            <li class="mobile-sites mobile-sites__line"><a href="">Linkedin</a></li>
+          </ul>
+        </div>
         <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="menu__icon" width="40" height="40" aria-label="Кнопка меню">
             <use class="icon__cross" href="./svg/icons.svg#icon-cross"></use>
@@ -70,14 +63,15 @@
           </svg>
         </button>
 
-
         <nav class="header_nav">
           <ul class="header_menu list">
             <li class="header_item">
               <a class="header_link header_link--accent" href="./index.html">Студія</a>
             </li>
             <li class="header_item">
-              <a class="header_link header_link--line header_link--focus" href="./portfolio.html">Портфоліо</a>
+              <a class="header_link header_link--line header_link--focus" href="./portfolio.html"
+                >Портфоліо</a
+              >
             </li>
             <li class="header_item">
               <a class="header_link header_link--accent" href="">Контакти</a>
@@ -108,7 +102,6 @@
 
     <!-- MAIN -->
     <main>
-
       <section class="section-portfolio">
         <div class="section_container">
           <h1 class="visually-hidden">Portfolio</h1>
@@ -131,16 +124,13 @@
             </li>
           </ul>
 
-
-
-          
           <ul class="portfolio list">
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
                 <div class="portfolio-cover">
                   <img
                     class="img"
-                      srcset="
+                    srcset="
                       ./img/tab/portfolio M img 354.jpg 354w,
                       ./img/laptop/portfolio L img 370.jpg 370w,
                       ./img/mobile/portfolio img 450.jpg 450w,
@@ -148,8 +138,7 @@
                       ./img/tab/portfolio M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
+                    sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
                     src="./img/mobile/portfolio img 450.jpg"
                     width="100%"
                     alt="лептоп з картками працівників"
@@ -172,9 +161,9 @@
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
                 <div class="portfolio-cover">
-                  <img 
-                  class="img"
-                      srcset="
+                  <img
+                    class="img"
+                    srcset="
                       ./img/tab/portfolio1 M img 354.jpg 354w,
                       ./img/laptop/portfolio1 L img 370.jpg 370w,
                       ./img/mobile/portfolio1 img 450.jpg 450w,
@@ -182,11 +171,11 @@
                       ./img/tab/portfolio1 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio1 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
+                    sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
                     src="./img/mobile/portfolio1 img 450.jpg"
                     width="100%"
-                   alt="баскетболісти" />
+                    alt="баскетболісти"
+                  />
 
                   <div class="overlay-portfolio">
                     <p class="overlay-text">
@@ -206,9 +195,9 @@
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
                 <div class="portfolio-cover">
-                  <img 
-                  class="img"
-                      srcset="
+                  <img
+                    class="img"
+                    srcset="
                       ./img/tab/portfolio2 M img 354.jpg 354w,
                       ./img/laptop/portfolio2 L img 370.jpg 370w,
                       ./img/mobile/portfolio2 img 450.jpg 450w,
@@ -216,11 +205,11 @@
                       ./img/tab/portfolio2 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio2 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
+                    sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
                     src="./img/mobile/portfolio2 img 450.jpg"
-                    width="100%" 
-                  alt="логотип ресторану" />
+                    width="100%"
+                    alt="логотип ресторану"
+                  />
 
                   <div class="overlay-portfolio">
                     <p class="overlay-text">
@@ -239,9 +228,9 @@
             </li>
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
-                <img 
-                class="img"
-                      srcset="
+                <img
+                  class="img"
+                  srcset="
                       ./img/tab/portfolio3 M img 354.jpg 354w,
                       ./img/laptop/portfolio3 L img 370.jpg 370w,
                       ./img/mobile/portfolio3 img 450.jpg 450w,
@@ -249,11 +238,11 @@
                       ./img/tab/portfolio3 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio3 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
-                    src="./img/mobile/portfolio3 img 450.jpg"
-                    width="100%" 
-                alt="навушники" />
+                  sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
+                  src="./img/mobile/portfolio3 img 450.jpg"
+                  width="100%"
+                  alt="навушники"
+                />
                 <div class="portfolio-img">
                   <h2 class="portfolio-title">Проєкт Prime</h2>
                   <p class="portfolio-subtitle">Маркетинг</p>
@@ -262,9 +251,9 @@
             </li>
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
-                <img 
-                class="img"
-                      srcset="
+                <img
+                  class="img"
+                  srcset="
                       ./img/tab/portfolio4 M img 354.jpg 354w,
                       ./img/laptop/portfolio4 L img 370.jpg 370w,
                       ./img/mobile/portfolio4 img 450.jpg 450w,
@@ -272,11 +261,11 @@
                       ./img/tab/portfolio4 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio4 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
-                    src="./img/mobile/portfolio4 img 450.jpg"
-                    width="100%"
-                alt="картонні коробки" />
+                  sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
+                  src="./img/mobile/portfolio4 img 450.jpg"
+                  width="100%"
+                  alt="картонні коробки"
+                />
                 <div class="portfolio-img">
                   <h2 class="portfolio-title">Проєкт Boxes</h2>
                   <p class="portfolio-subtitle">Додаток</p>
@@ -285,9 +274,9 @@
             </li>
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
-                <img 
-                class="img"
-                      srcset="
+                <img
+                  class="img"
+                  srcset="
                       ./img/tab/portfolio5 M img 354.jpg 354w,
                       ./img/laptop/portfolio5 L img 370.jpg 370w,
                       ./img/mobile/portfolio5 img 450.jpg 450w,
@@ -295,11 +284,11 @@
                       ./img/tab/portfolio5 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio5 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
-                    src="./img/mobile/portfolio5 img 450.jpg"
-                    width="100%" 
-                alt="монітор" />
+                  sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
+                  src="./img/mobile/portfolio5 img 450.jpg"
+                  width="100%"
+                  alt="монітор"
+                />
                 <div class="portfolio-img">
                   <h2 class="portfolio-title">Inspiration has no Borders</h2>
                   <p class="portfolio-subtitle">Веб-сайт</p>
@@ -308,9 +297,9 @@
             </li>
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
-                <img 
-                class="img"
-                      srcset="
+                <img
+                  class="img"
+                  srcset="
                       ./img/tab/portfolio6 M img 354.jpg 354w,
                       ./img/laptop/portfolio6 L img 370.jpg 370w,
                       ./img/mobile/portfolio6 img 450.jpg 450w,
@@ -318,11 +307,11 @@
                       ./img/tab/portfolio6 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio6 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
-                    src="./img/mobile/portfolio6 img 450.jpg"
-                    width="100%"
-                alt="журнал" />
+                  sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
+                  src="./img/mobile/portfolio6 img 450.jpg"
+                  width="100%"
+                  alt="журнал"
+                />
                 <div class="portfolio-img">
                   <h2 class="portfolio-title">Видання Limited Edition</h2>
                   <p class="portfolio-subtitle">Дизайн</p>
@@ -331,9 +320,9 @@
             </li>
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
-                <img 
-                class="img"
-                      srcset="
+                <img
+                  class="img"
+                  srcset="
                       ./img/tab/portfolio7 M img 354.jpg 354w,
                       ./img/laptop/portfolio7 L img 370.jpg 370w,
                       ./img/mobile/portfolio7 img 450.jpg 450w,
@@ -341,11 +330,11 @@
                       ./img/tab/portfolio7 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio7 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
-                    src="./img/mobile/portfolio7 img 450.jpg"
-                    width="100%" 
-                alt="етикетка" />
+                  sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
+                  src="./img/mobile/portfolio7 img 450.jpg"
+                  width="100%"
+                  alt="етикетка"
+                />
                 <div class="portfolio-img">
                   <h2 class="portfolio-title">Проєкт LAB</h2>
                   <p class="portfolio-subtitle">Маркетинг</p>
@@ -354,9 +343,9 @@
             </li>
             <li class="portfolio_border">
               <a class="portfolio-link" href="">
-                <img 
-                class="img"
-                      srcset="
+                <img
+                  class="img"
+                  srcset="
                       ./img/tab/portfolio8 M img 354.jpg 354w,
                       ./img/laptop/portfolio8 L img 370.jpg 370w,
                       ./img/mobile/portfolio8 img 450.jpg 450w,
@@ -364,11 +353,11 @@
                       ./img/tab/portfolio8 M img@2x 708.jpg 708w,
                       ./img/mobile/portfolio8 img@2x 900.jpg 900w,
                       "
-                      sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
-
-                    src="./img/mobile/portfolio8 img 450.jpg"
-                    width="100%"
-                alt="чоловік друкує на ноутбоці" />
+                  sizes="(min-width:1200px) 370w, (min-width: 768px) 354w, (min-width: 480px) 450w, 100vw"
+                  src="./img/mobile/portfolio8 img 450.jpg"
+                  width="100%"
+                  alt="чоловік друкує на ноутбоці"
+                />
                 <div class="portfolio-img">
                   <h2 class="portfolio-title">Growing Business</h2>
                   <p class="portfolio-subtitle">Додаток</p>
@@ -385,7 +374,9 @@
     <footer class="footer">
       <div class="section_container footer_container">
         <div class="footer--transform">
-          <a href="./index.html" class="link footer_logo"><span class="header_logo">Web</span>Studio</a>
+          <a href="./index.html" class="link footer_logo"
+            ><span class="header_logo">Web</span>Studio</a
+          >
           <address class="footer_address">
             <ul class="footer_nav list">
               <li class="footer-item">
@@ -462,9 +453,7 @@
       </div>
     </footer>
 
-
-
-        <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
