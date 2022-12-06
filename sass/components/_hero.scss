@@ -8,7 +8,7 @@
         linear-gradient(to right,
             rgba(47, 48, 58, .4),
             rgba(47, 48, 58, .4)), 
-            url(../../img/mobile/Header_img_480.jpg);
+            url(../img/mobile/Header_img_480.jpg);
 
     background-position: center;
     background-size: cover;
@@ -20,31 +20,31 @@
         screen and (min-resolution: 2dppx) {
             .hero {
                 
-                background-image: linear-gradient(to right, rgba(47, 48, 58, .4),rgba(47, 48, 58, .4)), url(../../img/mobile/Header_img@2x_480.jpg);
+                background-image: linear-gradient(to right, rgba(47, 48, 58, .4),rgba(47, 48, 58, .4)), url(../img/mobile/Header_img@2x_480.jpg);
             }
         }
 
         @media screen and (min-width:481px){
-            background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../../img/tab/Header_M_img_768.jpg);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../img/tab/Header_M_img_768.jpg);
             
             @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
                     .hero {
-                        background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../../img/tab/Header_M_img@2x_768.jpg);
+                        background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../img/tab/Header_M_img@2x_768.jpg);
                     }
                 }
         }
 
 
                 @media screen and (min-width:769px) {
-                    background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../../img/laptop/header_Img_1200.jpg);
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../img/laptop/header_Img_1200.jpg);
         
                     @media screen and (min-device-pixel-ratio: 2),
                     screen and (min-resolution: 192dpi),
                     screen and (min-resolution: 2dppx) {
                         .hero {
-                            background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../../img/laptop/header_Img@2x_1200.jpg);
+                            background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../img/laptop/header_Img@2x_1200.jpg);
                         }
                     }
                 }
