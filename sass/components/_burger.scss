@@ -70,12 +70,15 @@
 }
 .mobile-item{
     display: inline-block;
+    margin-right: auto;
 }
 
 .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
 
     &__position{
         margin-top: auto;

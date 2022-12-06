@@ -698,12 +698,15 @@ button {
 
 .mobile-item {
   display: inline-block;
+  margin-right: auto;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu__position {
   margin-top: auto;
@@ -1710,12 +1713,15 @@ button {
 
 .mobile-item {
   display: inline-block;
+  margin-right: auto;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu__position {
   margin-top: auto;
