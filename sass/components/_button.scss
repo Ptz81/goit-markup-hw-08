@@ -15,9 +15,13 @@ button {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    padding: 10px 24px;
+    padding: 10px 20px;
     outline: 1px solid transparent;
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), outline 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+            padding: 10px 24px;
+        }
 
     @media screen and (min-width: 1200px) {
         padding: 10px 32px;   
@@ -57,6 +61,13 @@ button {
             color: var(--main-color);
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
+}
+
+.section-btn__min{
+    @media screen and (max-width: 479px) {
+        width: 130px;
+    }
+    
 }
 
 .btn-default{

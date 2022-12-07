@@ -22,14 +22,22 @@
 }
 
 .footer--transform {
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 320px) and (max-width:479px) {
+            margin-bottom: 50px;
+            
+        }
 
     @media screen and (min-width: 480px) and (max-width:1199px) {
         margin-bottom: 60px;
-        text-align: center;
-        align-items: center;
+       
         }
     
  
@@ -42,7 +50,7 @@
 
 
 .footer_address {
-
+    
     font-style: normal;
 
     @media screen and (min-width: 1200px){
@@ -87,11 +95,21 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer_section--min{
+    @media screen and (max-width: 479px) {
+            margin-bottom: 20px;
+            
+        }
+}
+
 
 .footer_subscribe{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
     
+
 
     @media screen and (min-width: 480px) and (max-width: 1199px){
     margin-bottom: 60px;
@@ -117,6 +135,10 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+
+    @media screen and (max-width:479px) {
+        text-align: center;
+    }
 }
 
 .footer_section {
@@ -161,10 +183,8 @@
     display: flex;
     align-items: center;
     gap: 20px;
-
-    @media screen and (min-width: 480px) {
-            flex-direction:column;
-        }
+    flex-direction: column;
+    
 
         @media screen and (min-width: 1200px) {
             justify-content: center;
@@ -174,13 +194,14 @@
 }
 
 .footer_label {
+    width: 100%;
     margin: 0;
    
     
 }
 
 .footer_input {
-    width: 360px;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
     background-color: inherit;
@@ -190,6 +211,10 @@
     color: var(--main-color);
     font-size: 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 480px) {
+        width: 360px;
+    }
     
 
     &::placeholder {

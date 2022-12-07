@@ -19,9 +19,16 @@
     color: var(--main-color);
     display: inline-block;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 24px;
     line-height: calc(28/24);
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 1.2;
+        }
+
     @media screen and (min-width: 1200) {
         font-size: 26px;
         line-height: calc(31/26);
