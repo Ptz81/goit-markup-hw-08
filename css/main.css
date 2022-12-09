@@ -977,7 +977,18 @@ button {
 @media screen and (min-width: 1200px) {
   .advantage_item {
     width: 270px;
-    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .advantage_section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage_section {
+    padding-top: 94px;
   }
 }
 
@@ -1215,12 +1226,24 @@ button {
   padding: 20px 24px;
   border: 1px solid var(--border-header);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-img {
+    flex-grow: 1;
+  }
+}
 
 .portfolio-link {
   display: block;
   text-decoration: none;
   color: currentColor;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 .portfolio-link:hover, .portfolio-link:focus {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1614,6 +1637,7 @@ button {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer--transform {
+    text-align: center;
     margin-right: 165px;
   }
 }

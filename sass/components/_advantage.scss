@@ -31,12 +31,28 @@
 }
 @media screen and (min-width: 1200px) {
     width: 270px;
-    height: 120px;
+    
 }
         
 }
 
-
+.advantage_section{
+            
+           
+            @media screen and (max-width: 1199px) {
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+            
+                }
+    
+    
+    
+            @media screen and (min-width: 1200px) {
+                padding-top: 94px;
+               
+    
+            }
+}
 
 .advantage-wrapper__icon {
     @include flex;
